@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fingerprint Changer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/currentFingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текущий fingerprint:"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="#f0f0f0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Новый fingerprint:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/fingerprintInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Например: google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить Fingerprint"
+        android:enabled="false"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=⚠️ Внимание: Требуется root доступ и перезагрузка устройства"
+        android:textSize="12sp"
+        android:textColor="#FF6B6B"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
